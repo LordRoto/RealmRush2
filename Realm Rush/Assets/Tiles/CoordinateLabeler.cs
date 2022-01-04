@@ -59,8 +59,8 @@ void ToggleLabels()
 
     void DisplayCoordinates()
     {
-        coordinates.x = Mathf.RoundToInt(transform.parent.position.x / UnityEditor.EditorSnapSettings.move.x);
-        coordinates.y = Mathf.RoundToInt(transform.parent.position.z / UnityEditor.EditorSnapSettings.move.z);
+        coordinates.x = Mathf.RoundToInt(transform.parent.position.x / 10);
+        coordinates.y = Mathf.RoundToInt(transform.parent.position.z / 10);
 
         label.text = coordinates.x + "," + coordinates.y; 
     }
